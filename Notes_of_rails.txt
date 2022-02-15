@@ -1,0 +1,40 @@
+//-----Update a section of your page using AJAX in Rails 6
+	link:- https://robertfaldo.medium.com/update-a-section-of-your-page-using-ajax-in-rails-6-4e8099c1aec8
+
+//--------jquery
+	.attr() = it is used to set attribute
+	example:- $("#id").attr("class","className");
+
+//---------Stripe Payment------
+	1.https://stripe.com/docs/payments/checkout/migration
+	2. https://stripe.com/docs/api/charges/object
+
+//--------install tailwind2 in rails6
+	link:- https://web-crunch.com/posts/how-to-install-tailwind-css-2-using-ruby-on-rails
+
+//--------to insert data in bulk or to insert multiple record---------//
+				use gem 'activerecord-import'
+	link:- https://github.com/zdennis/activerecord-import
+
+//--------edit credentials in rails----------------//
+    command1:- $env:EDITOR="code --wait"
+    command2:- rails credentials:edit
+	To Save simply close the page
+
+//-----------To treat a String as a object--------------//
+		"string".constantize
+
+//-----------For Pagination--------------------------------//
+	with SearchKick: https://ddnexus.github.io/pagy/extras/searchkick.html#gsc.tab=0
+
+//------------------get ip in ruby-------------------------------//
+		require 'socket'
+		ip = Socket.ip_address_list.detect{|intf| intf.ipv4_private?}
+		ip.ip_address
+		
+//------------------Worker in rails-----------------------------------------//
+	A worker is typically a process that runs outside of your application request cycle.
+	A server running your rails app uses workers to do all of the things an application needs. It sends email, runs requests, performs 	calculations etc. The number of workers you need depends on how much traffic and calculations your web app needs to do.
+	
+	Q.    What is Sidekiq?
+	Ans:- Sidekiq is a Ruby-written open source job scheduler. It is important to be aware that Sidekiq does not do scheduling by 		      default, it only performs jobs. The Enterprise version comes with outbox scheduling.

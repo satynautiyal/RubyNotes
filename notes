@@ -1,0 +1,23 @@
+                                              #----------RSpec------------------#
+RSpec is a unit test framework for ruby programing language. RSpec is a behaviour driven development tool i.e test written in Rspec does not focus on the working but on the behaviour of the application beign tested, in other words what the application actually does. 
+**To get Rspec matchers just search Rspec matchers
+#------Commands To generate models helpers views routing etc in spec folder---------------#
+	rails g rspec:request (to generate routing and request)
+	rails g rspec:model model_name
+	rails g rspec:controller controller_name
+	rails g rspec:views
+	
+	
+	
+	***************implement 1.bullet gem 2.bill in pdf format 3.sales in admin section***********
+	
+#----------Rails Engines----------------------#
+
+	What are engines?
+    ->	Engines can be considered miniature applications that provide functionality to their host applications. A Rails application is 		actually just a "supercharged" engine, with the Rails::Application class inheriting a lot of its behavior from Rails::Engine.
+    
+    -->Sendgrid for mails--
+    -- binding prey--
+    
+#---------------------------------------------Singleton class---------------------------------#
+	Ruby provides a way to define methods that are specific to a particular object and such methods are known as Singleton Methods. 		When one declares a singleton method on an object, Ruby automatically creates a class to hold just the singleton methods. The newly 		created class is called Singleton Class.

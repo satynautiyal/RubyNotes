@@ -1,0 +1,15 @@
+public ip 18.119.17.235
+
+login ssh -i ../../Downloads/shopdrag-key-aws-rails.pem ubuntu@3.145.128.127
+
+ip: 18.190.24.51
+
+
+//------------------Error: - ENOSPC no space left on device -Nodejs -------------------------//
+		run this command :- "sudo docker system prune" 
+				*This command will delete all container of docker*
+				
+//---------------Docker ERROR: Error processing tar file(exit status 1): unexpected EOF---------//
+	link:- https://stackoverflow.com/questions/42784396/docker-error-error-processing-tar-fileexit-status-1-unexpected-eof
+	
+	

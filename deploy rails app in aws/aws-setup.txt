@@ -1,0 +1,42 @@
+							#-Getting Started with AWS--#
+Step 1 :- Go to 
+	" https://aws.amazon.com/free/?						trk=ps_a134p000003yhmGAAQ&trkCampaign=acq_paid_search_brand&sc_channel=ps&sc_campaign=acquisition_IN&sc_publisher=google&sc_category=core&sc_country=IN&sc_geo=APAC&sc_outcome=Acquisition&sc_detail=aws%20services&sc_content=Account_e&sc_matchtype=e&sc_segment=453325184854&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|AWS|Core|IN|EN|Text&s_kwcid=AL!4422!3!453325184854!e!!g!!aws%20services&ef_id=EAIaIQobChMI0YXyvcSr9QIVCZpmAh31nQ4TEAAYASAAEgL2VfD_BwE:G:s&s_kwcid=AL!4422!3!453325184854!e!!g!!aws%20services&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all " 
+
+Step 2 :- If you have already registered on Aws click on "sign in" at the top right corner, if you are new to AWS just click on 
+"Create an AWS account" button and create a new account.
+
+Step 3 :- After login successfully, just click on "Sign in to console" you will redirected to your aws console(if asking for use and password again don't worry just enter your credentials and login)
+
+Step 4 :- Now, scroll down to "Build a solution" section and click on "Launch a virtual machine with EC2".
+
+Step 5 :- You will be redirected to a new page which is "Step 1: Choose an Amazon Machine Image (AMI)", just scroll down and select "Ubuntu Server 20.04 LTS (HVM), SSD Volume Type".(or you can select any virtual machine as per your need.)
+
+Step 6 :- After selecting your virtual machine you will be redirect to "Step 2: Choose an Instance Type" select "t2.micro" from the given list.(or you can select any option as per your need.)
+
+Step 7 :- After selecting your desired virtual machine scroll to the top of the page and just click on  6th step of the form i.e "6. Configure Security Group".
+
+Step 8 :- Now, in Security gorup name you can give the name of your security group and from Description tab you can give the description tab or you can leave these tab as it is.
+
+Step 9 :- In Type  dropdown select "SSH" then in source tab select "Anywhere"(if you want to access this port from anywhere) and then click on "Review and Launch" button,  then click on Launch button.
+
+Step 10 :- After clicking on launch button a prompt will open asking you to create a new key pair or choose an existing key pair (actually this is a file which is required if you want to make an SSH connection between your machine to AWS instance), so if you have already a key select "Choose an existing pair" and if not just create a new key and don't forget to download it and then click on "Launch" button.
+
+Step 11 :- After Launching your instance just go on EC2 dashboard "https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Home:" and select "Instances(running)" from Resources tab.
+
+Step 12 :- From here you can see your running instances and check your instance state.(Note it may take some time to setup your newly created instance).
+
+#-----------------------------------------Connecting with instance through SSH-----------------------------------_#
+
+Step 13 :- Now, Right click on your newly created instance (you can check the security group name) and click on connect option.
+
+Step 14:- Now copy your Public Ip address from Connect to instance.(**Please note down User name as it is required in Step 16)
+
+Step 15 :- Now open your local terminal and type :- chmod 400 name.pem(key-pair-file which you have downloaded while creating your instance)
+
+Step 16 :- Now in your local terminal type :- ssh -i name.pem(key-pair-file which you have downloaded while creating yourinstance) user@public-ip-address-of-your-instance
+(here public ip address is the ip address which you have copied in step 14)
+eg :- ssh -i Downloads/shopdrag-rails.pem ubuntu@3.95.197.92
+
+Step 17 :- Congratulations You are now connected to your AWS instance
+
+
